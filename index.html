@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Onboarding Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <header class="form-header">
+                <h1>New Employee Onboarding</h1>
+                <p>Please fill in the new employee's basic information</p>
+            </header>
+
+            <form id="onboardingForm" class="onboarding-form">
+                <!-- Personal Information Section -->
+                <fieldset class="form-section">
+                    <legend>Personal Information</legend>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dateOfBirth">Date of Birth</label>
+                            <input type="date" id="dateOfBirth" name="dateOfBirth">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender">
+                                <option value="">-- Select --</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not-to-say">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Employment Information Section -->
+                <fieldset class="form-section">
+                    <legend>Employment Information</legend>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="employeeId">Employee ID *</label>
+                            <input type="text" id="employeeId" name="employeeId" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jobTitle">Job Title *</label>
+                            <input type="text" id="jobTitle" name="jobTitle" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="department">Department *</label>
+                            <select id="department" name="department" required>
+                                <option value="">-- Select Department --</option>
+                                <option value="engineering">Engineering</option>
+                                <option value="sales">Sales</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="hr">Human Resources</option>
+                                <option value="finance">Finance</option>
+                                <option value="operations">Operations</option>
+                                <option value="customer-support">Customer Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="manager">Manager Name</label>
+                            <input type="text" id="manager" name="manager">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="startDate">Start Date *</label>
+                            <input type="date" id="startDate" name="startDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="employmentType">Employment Type *</label>
+                            <select id="employmentType" name="employmentType" required>
+                                <option value="">-- Select Type --</option>
+                                <option value="full-time">Full-Time</option>
+                                <option value="part-time">Part-Time</option>
+                                <option value="contract">Contract</option>
+                                <option value="internship">Internship</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Contact Information Section -->
+                <fieldset class="form-section">
+                    <legend>Contact Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder="Street address">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city">
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State/Province</label>
+                            <input type="text" id="state" name="state">
+                        </div>
+                        <div class="form-group">
+                            <label for="zipCode">Zip/Postal Code</label>
+                            <input type="text" id="zipCode" name="zipCode">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country">
+                    </div>
+                </fieldset>
+
+                <!-- Emergency Contact Section -->
+                <fieldset class="form-section">
+                    <legend>Emergency Contact</legend>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="emergencyContactName">Contact Name</label>
+                            <input type="text" id="emergencyContactName" name="emergencyContactName">
+                        </div>
+                        <div class="form-group">
+                            <label for="emergencyContactRelation">Relationship</label>
+                            <input type="text" id="emergencyContactRelation" name="emergencyContactRelation">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="emergencyContactPhone">Phone Number</label>
+                            <input type="tel" id="emergencyContactPhone" name="emergencyContactPhone">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Additional Information Section -->
+                <fieldset class="form-section">
+                    <legend>Additional Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="notes">Notes/Comments</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Any additional information..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                        <label for="agreeTerms">I confirm that the above information is accurate and complete *</label>
+                    </div>
+                </fieldset>
+
+                <!-- Form Actions -->
+                <div class="form-actions">
+                    <button type="reset" class="btn btn-secondary">Clear Form</button>
+                    <button type="submit" class="btn btn-primary">Submit Employee Information</button>
+                </div>
+            </form>
+
+            <!-- Success Message -->
+            <div id="successMessage" class="success-message" style="display: none;">
+                <div class="success-content">
+                    <h2>✓ Success!</h2>
+                    <p>Employee information has been submitted successfully.</p>
+                    <button type="button" class="btn btn-primary" onclick="location.reload()">Submit Another Employee</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
